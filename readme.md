@@ -22,11 +22,18 @@ Simply **copy** the `errify.hpp` file into your project and include it:
 ```cpp
 #include "errify.hpp"
 ```
+## ⚡ Usage
+The **examples/** directory contains sample programs demonstrating Errify in action.
 
+```bash
+cd examples
+chmod +x build.sh
+./example
+```
 
 ## 🔧 API Overview
-```cpp
 
+```cpp
 BaseError           // A interface class to define custom error
 
 Error               // Stores any type which extends BaseError
