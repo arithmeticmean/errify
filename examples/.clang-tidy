@@ -1,0 +1,21 @@
+
+Cshecks: >
+  -*,                                 # Disable all checks by default
+  clang-analyzer-*,
+  modernize-*,
+  cppcoreguidelines-*,
+  readability-*,
+  performance-*
+
+CheckOptions:
+  # Allow the use of C-style standard functions
+  - key: cppcoreguidelines-pro-type-vararg
+    value: 'true'
+  - key: cppcoreguidelines-pro-bounds-pointer-arithmetic
+    value: 'false'
+  - key: cppcoreguidelines-avoid-c-arrays
+    value: 'false'
+  - key: modernize-deprecated-headers
+    value: 'false'
+  - key: modernize-use-nullptr
+    value: 'false'
